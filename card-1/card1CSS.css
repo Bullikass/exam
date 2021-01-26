@@ -1,0 +1,95 @@
+@font-face {
+    font-family: ButlerRegular;
+    src: url(ButlerRegular.otf);
+}
+
+.body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e3e7;
+    background-size: 1500px 900px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 100px;
+    box-shadow: 0 100px 100px -100px black;
+}
+
+.card__content {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: white;
+    height: 650px;
+    width: 600px;
+}
+
+.card__title {
+    font-family: ButlerRegular, serif;
+    font-size: 100px;
+    padding: 0;
+    margin-top: 120px;
+
+}
+
+.card__title-item {
+    letter-spacing: 5px;
+    line-height: 80px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.card__title-item:last-child {
+    letter-spacing: 2px;
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.card__text {
+    font-family: ButlerRegular, serif;
+    font-size: 30px;
+    color: #f36f4a;
+    padding: 0;
+    margin-top: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.card__text-item {
+    padding: 0;
+    margin: 0;
+}
+
+.card__buttom-item {
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 66px;
+}
+
+.card__buttom {
+    font-family: ButlerRegular, serif;
+    width: 340px;
+    height: 70px;
+    font-size: 24px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 80px;
+    letter-spacing: 1px;
+}
+
+.card__img {
+    height: 650px;
+    width: 600px;
+}
