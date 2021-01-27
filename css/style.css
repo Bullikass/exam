@@ -103,7 +103,7 @@
 }
 
 .nav__item:hover {
-    border-bottom: 2px solid white;
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -147,23 +147,62 @@
 .content__nav {
     display: flex;
     width: 306px;
-    background-color: #6d96bc;
+    justify-content: start;
+    flex-direction: column;
 }
 
-.content__cards-text {
+.content__nav-menu {
+    font-family: PTSansRegular, serif;
+    font-size: 22px;
+    color: #767676;
+}
+
+.content__nav-text:nth-child(2) {
+    border-bottom: 2px solid #767676;
+    width: 161px;
+}
+
+.content__nav-dots {
+    font-size: 16px;
+}
+
+.content__nav-dots:nth-child(1) {
+    border-bottom: 2px solid #767676;
+    width: 113px;
+}
+
+.content__nav-excel {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    flex-direction: column;
+}
+
+.content__nav-excel-img {
+    display: flex;
+    justify-content: center;
+}
+
+.content__nav-excel-text {
+    font-family: PTSansBold, serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.content__cards-titles {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-color: #ba2042;
     width: 1194px;
 }
 
 .content__cards {
-    width: auto;
-    height: 784px;
+    height: auto;
     padding: 0;
     margin: 0;
-    /*flex: 1 0 70%;*/
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .content__cards-item {
@@ -180,24 +219,12 @@
     margin-right: 0;
 }
 
-.content__text {
-    background-color: #f1c81d;
-    width: 100%;
-    height: 212px;
-}
-
-.footer {
-    background-color: #777777;
-    height: 220px;
-    width: auto;
-}
-
 .content__cards-container {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    flex-direction: column;
     margin: 0;
     padding: 40px;
-    background-color: #e27c2a;
     width: 301px;
     height: 460px;
 }
@@ -207,5 +234,133 @@
     justify-content: start;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+}
+
+.content__cards-text {
+    font-size: 18px;
+    font-family: PTSansRegular, serif;
+    color: #767676;
+    margin: 0;
+    padding-top: 22px;
+    width: 100%;
+}
+
+.content__cards-footer {
+    margin: 0;
+    padding-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    height: 28px;
+}
+
+.content__cards-price {
+    font-family: PTSansBold, serif;
+    font-size: 28px;
+    color: #444444;
+    margin: 0;
+    padding: 0;
+}
+
+.content__cards-price-item {
+    margin: 0;
+    padding: 0;
+}
+
+.content__cards-text-item {
+    margin: 0;
+    padding: 0;
+}
+
+.content__cards-basket {
+    height: 25px;
+    width: 33px;
+}
+
+.content__cards-number {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 110px;
+    border-bottom: 1px solid #777777;
+}
+
+.content__cards-number-block {
+    font-family: PTSansRegular, serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #767676;
+    width: 184px;
+    padding-top: 35px;
+}
+
+.content__cards-number-item {
+    margin: 0;
+    padding: 0;
+}
+
+.content__cards-number-item:nth-child(3) {
+    font-size: 20px;
+    color: #444444;
+}
+
+.content__text {
+    width: 100%;
+    height: 212px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    font-family: PTSansRegular, serif;
+    color: #767676;
+    font-size: 21px;
+    padding-top: 50px;
+    padding-bottom: 400px;
+}
+
+.сontent__text-block-1 {
+    width: 371px;
+}
+
+.сontent__text-block-1 {
+    width: 371px;
+}
+
+.footer {
+    background-color: #777777;
+    height: 250px;
+    width: auto;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: PTSansRegular, serif;
+    font-size: 16px;
+    color: white;
+    padding-top: 60px;
+    line-height: 1.86;
+}
+
+.footer__content-menu-item {
+    text-decoration: underline
+}
+
+.footer__content-dev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__content-dev-img {
+    padding: 8px 9px 0 0;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.fix {
+    margin: 0;
+    padding: 0;
 }
